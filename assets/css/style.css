@@ -1,0 +1,169 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    width: 100%;
+    position: fixed;
+    transition-duration: 0.5s;
+    z-index: 99;
+}
+nav{
+    position: absolute;
+    right: 0px;
+    top: 59px;
+    padding-right: 25px;
+    transition-duration: 0.5s;
+    background-color: #fff;
+}
+nav ul{
+    list-style-type: none;
+}
+.headerColor{
+    background-color: #fff;
+    transition-duration: 0.5s;
+}
+#backToTop{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 99;
+}
+.item{
+    margin: 45px;
+    padding: 25px;
+}
+footer{
+    width: 100%;
+    background-color: #ebebeb;
+}
+.product{
+    position: relative;
+    z-index: 80;
+    padding: 20px 0px;
+}
+.product p{
+    font-size: 20px;
+}
+.product .productName{
+    font-weight: bold;
+}
+.product .fa-star{
+    color: burlywood;
+    font-size: 25px;
+}
+.card-position{
+    position: absolute;
+    z-index: 80;
+    bottom: 20px;
+    right: 30px;
+}
+.bsHome{
+    margin-top: 250px;
+}
+#best h1::after{
+    content: "-";
+}
+#best h1::before{
+    content: "-";
+}
+.add-to-card,.card-up{
+    color: #75edff;
+}
+.card-added{
+    color: #0026ff;
+    transition-duration: 0.5s;
+}
+.card-animation{
+    transform: rotate(360deg);
+    transition-duration: 0.5s;
+}
+#slider{
+    position: relative;
+}
+#slider div{
+    position: absolute;
+    top: 40%;
+    left: 50px;
+}
+#slider h1{
+    font-size: 65px;
+}
+.stats div{
+    background-color: #ebebeb;
+}
+/* #sneakerAnimation{
+    animation-name: myAnimation;
+    animation-iteration-count: infinite;
+} */
+.left{
+    transform: rotateY(0deg);
+}
+.right{
+    transform: rotateY(180deg);
+}
+.shadow{
+    box-shadow: 0px 0px 10px #c2c2c2;
+}
+.shadow-dark{
+    box-shadow: 0px 0px 10px #ffffff;
+}
+.darkTheme .fa-toggle-on{
+    color: rgb(255, 255, 255);
+}
+/* @keyframes myAnimation{
+    0% {
+        transform: rotateY(0deg);
+        }
+    100% {
+        transform: rotateY(180deg);
+        }
+} */
+#sumProducts{
+    text-align: right;
+}
+.yellowTheme{
+    background-color: yellowgreen;
+}
+.form-control:not(.btn){
+    background-color: transparent;
+}
+.form-control:focus:not(.btn){
+    background-color: transparent;
+}
+@media screen and (max-width:800px){
+    .item{
+        margin: 20px;
+        padding: 0px;
+    }
+    #slider h1{
+        font-size: 30px;
+    }
+    #slider p{
+        font-size: 20px!important;
+    }
+    .product .fa-star{
+        font-size: 15px;
+    }
+    .card-position{
+        font-size: 15px!important;
+        right: 15px;
+        bottom: 10px;
+    }
+    .product{
+        padding: 0px 10px!important;
+    }
+    .bsHome{
+        margin-top: 150px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .item{
+        margin: 5px;
+    }
+}

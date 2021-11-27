@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Reid</title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header id="header" class="d-flex justify-content-between flex-wrap p-3">
+        
+    </header>
+    
+    
+    <div id="best" class="py-5">
+        <h1 class="text-center py-5">Contact</h1>
+    </div>
+    <div class="d-flex flex-wrap justify-content-around my-5 col-12">
+
+
+        <div class="col-10 col-md-5">
+           <h2>Contact Us</h2> 
+           <p>Clothing Shop Online is dedicated to fulfilling the apparel needs of our customers. Our Customer Service representatives are available Monday through Friday during regular business hours to address any questions or concerns that you may have.</p>
+           <hr>
+           <p><i class="fas fa-map-marker-alt"></i> Address : Princess Road 55</p>
+           <hr>
+           <p><i class="far fa-envelope"></i> Infor@roadthemes.com</p>
+           <hr>
+           <p><i class="fas fa-phone-alt"></i> 0(1234) 567 890</p>
+        </div>
+
+        
+        <div class="col-10 col-md-5 mx">
+            <h2>Tell Us Your Project</h2>
+            <div class="col-12 mb-2">
+                <label for="email">E-mail *</label>
+                <input type="text" name="email" id="email" class="form-control">
+                <p id="errEmail"></p>
+            </div>
+            
+            <div class="col-12 mb-2">
+                <label for="phone">Phone *</label>
+                <input type="text" name="phone" id="phone" class="form-control">
+                <p id="errPhone"></p>
+            </div>
+            
+            <div class="col-12 mb-2">
+                <label for="subject">Subject *</label>
+                <input type="text" name="subject" id="subject" class="form-control">
+                <p id="errSubject"></p>
+            </div>
+
+            <div class="col-12 mb-2">
+                <label for="message">Message *</label>
+                <textarea name="message" id="message" class="form-control"></textarea>
+                <p id="errMessage"></p>
+            </div>
+
+            <div class="col-12 mt-4">
+                <button id="btnSend" class="form-control btn btn-primary disabled">Send</button>
+            </div>
+
+            <p class="text-success d-none mt-4" id="messageSuccess">You have successfuly sent message!</p>
+
+        </div>
+    </div>
+
+
+
+    <div id="backToTop" class="d-none">
+        <a href="#"><i class="fas fa-chevron-up fs-2"></i></a>
+    </div>
+    
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/main.js" type="text/javascript"></script>
+</body>
+</html>
