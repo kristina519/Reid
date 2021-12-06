@@ -36,39 +36,53 @@
            <p><i class="fas fa-phone-alt"></i> 0(1234) 567 890</p>
         </div>
 
-        
         <div class="col-10 col-md-5 mx">
-            <h2>Tell Us Your Project</h2>
-            <div class="col-12 mb-2">
-                <label for="email">E-mail *</label>
-                <input type="text" name="email" id="email" class="form-control">
-                <p id="errEmail"></p>
-            </div>
-            
-            <div class="col-12 mb-2">
-                <label for="phone">Phone *</label>
-                <input type="text" name="phone" id="phone" class="form-control">
-                <p id="errPhone"></p>
-            </div>
-            
-            <div class="col-12 mb-2">
-                <label for="subject">Subject *</label>
-                <input type="text" name="subject" id="subject" class="form-control">
-                <p id="errSubject"></p>
-            </div>
+                <form action="#" method="post" name="myForm">
+                <div class="col-12 mb-2">
+                    <label for="email">E-mail *</label>
+                    <input type="text" name="email" id="email" class="form-control">
+                    <p id="errEmail"></p>
+                </div>
+                
+                <div class="col-12 mb-2">
+                    <label for="phone">Phone *</label>
+                    <input type="text" name="phone" id="phone" class="form-control">
+                    <p id="errPhone"></p>
+                </div>
+                
+                <div class="col-12 mb-2">
+                    <label for="subject">Subject *</label>
+                    <input type="text" name="subject" id="subject" class="form-control">
+                    <p id="errSubject"></p>
+                </div>
 
-            <div class="col-12 mb-2">
-                <label for="message">Message *</label>
-                <textarea name="message" id="message" class="form-control"></textarea>
-                <p id="errMessage"></p>
-            </div>
+                <div class="col-12 mb-2">
+                    <label for="message">Message *</label>
+                    <textarea name="message" id="message" class="form-control"></textarea>
+                    <p id="errMessage"></p>
+                </div>
 
-            <div class="col-12 mt-4">
-                <button id="btnSend" class="form-control btn btn-primary disabled">Send</button>
-            </div>
+                <div class="col-12 mb-2">
+                    <label for="rate">Rate our products *</label><br>
+                    <input type="range" name="rate" id="rate" min="0" max="100">
+                    <span id="rangeValue"></span>
+                    <p id="errRate"></p>
+                </div>
 
-            <p class="text-success d-none mt-4" id="messageSuccess">You have successfuly sent message!</p>
+                <div class="col-12 mt-4">
+                    <p>Rate our shop *</p>
+                    <input type="radio" name="rateShop" value="awesome"><span> Awesome</span>
+                    <input type="radio" name="rateShop" value="good"><span> Good</span>
+                    <input type="radio" name="rateShop" value="bad"><span> Bad</span>
+                    <p id="errRate2"></p> 
+                </div>
 
+                <div class="col-12 mt-4">
+                    <button type="button" id="btnSend" class="form-control btn btn-primary disabled">Send</button>
+                </div>
+
+                <p class="text-success d-none mt-4" id="messageSuccess">You have successfuly sent message!</p>
+            </form>
         </div>
     </div>
 
