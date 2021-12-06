@@ -444,18 +444,23 @@ if(url.indexOf("contact.html")!=-1){
         document.getElementById("btnSend").classList.add("disabled")
         $("input").removeClass("border-success")
         $("textarea").removeClass("border-success")
+        $("input[type=radio]").prop('checked', false);
     })
+    $("#rate").change(getRateValue)
+    $("input[name='rateShop']").change(getRate2Value)
 
 
     var email=document.getElementById("email")
     var phone=document.getElementById("phone")
     var subject=document.getElementById("subject")
     var message=document.getElementById("message")
+    var rate=document.getElementById("rate")
+    var rateShop=$("input[name='rateShop']:checked")
 
 
     var regEmail=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
     var regTelefon=/^06[012345679]\d{6,7}$/;
-    var regSubject=/^[A-ZŽĐŠĆČ][a-zžđšćč]{2,}(\s[a-zžđšćč]{2,}){0,2}$/;
+    var regSubject=/^[A-Z][a-z]{2,}(\s[a-z]{2,}){0,2}$/;
 
     var err=0;
 
@@ -475,15 +480,26 @@ if(url.indexOf("contact.html")!=-1){
         checkAll()
     }
 
+    function rateCheck(){
+        checkAll()
+    }
+
+    function rateShopCheck(){
+        checkAll()
+    }
+
     email.addEventListener("keyup",emailCheck)
     phone.addEventListener("keyup",phoneCheck)
     subject.addEventListener("keyup",subjectCheck)
     message.addEventListener("keyup",messageCheck)
+    rate.addEventListener("change",rateCheck)
+    rateShop.change(rateShopCheck)
 
 }
 
 
 function checkAll(){
+    var rateShop=$("input[name='rateShop']:checked")
     var err=0
     if(!regEmail.test(email.value)){
         document.getElementById("errEmail").innerHTML='E-mail eg. kristina@gmail.com or kristina.mladenovic.5.19@ict.edu.rs'
@@ -529,10 +545,37 @@ function checkAll(){
         $("#subject").addClass("border-success")
         $("#subject").removeClass("border-danger")
     }
+    if(document.getElementById("rate").value==0){
+        document.getElementById("errRate").innerHTML="You have to choose number grater than 0"
+        err++
+    }
+    else{
+        document.getElementById("errRate").innerHTML=""
+    }
+    if(rateShop.length==0){
+        err++
+        document.getElementById("errRate2").innerHTML="You have to choose rate"
+    }
+    else{
+        document.getElementById("errRate2").innerHTML=""
+    }
+
 
     if(err==0){
         document.getElementById("btnSend").classList.remove("disabled")
     }
 
    
+}
+
+function getRateValue(){
+    $("#rangeValue").html(this.value)
+    if(this.value==0){
+        document.getElementById("btnSend").classList.add("disabled")
+    }
+}
+
+function getRate2Value(){
+    checkAll()
+    document.getElementById("errRate2").innerHTML=""
 }
