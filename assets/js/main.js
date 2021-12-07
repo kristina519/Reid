@@ -460,7 +460,7 @@ if(url.indexOf("contact.html")!=-1){
 
     var regEmail=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
     var regTelefon=/^06[012345679]\d{6,7}$/;
-    var regSubject=/^[A-ZŠĐŽČĆ][a-zŠĐŽČĆ]{2,}(\s[a-zšđžčć]{2,}){0,2}$/;
+    var regSubject=/^[A-ZŠĐŽČĆ][a-zšđžčć]{2,}(\s[a-zšđžčć]{2,}){0,2}$/;
 
     var err=0;
 
