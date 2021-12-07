@@ -458,9 +458,10 @@ if(url.indexOf("contact.html")!=-1){
     var rateShop=$("input[name='rateShop']:checked")
 
 
-    var regEmail=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
+    var 
+    Email=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
     var regTelefon=/^06[012345679]\d{6,7}$/;
-    var regSubject=/^[A-Z][a-z]{2,}(\s[a-z]{2,}){0,2}$/;
+    var regSubject=/^[A-ZŠĐŽČĆ][a-zšđžčć]{2,}(\s[a-z]{2,}){0,2}$/;
 
     var err=0;
 
