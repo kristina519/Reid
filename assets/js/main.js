@@ -458,8 +458,7 @@ if(url.indexOf("contact.html")!=-1){
     var rateShop=$("input[name='rateShop']:checked")
 
 
-    var 
-    Email=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
+    var regEmail=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
     var regTelefon=/^06[012345679]\d{6,7}$/;
     var regSubject=/^[A-ZŠĐŽČĆ][a-zŠĐŽČĆ]{2,}(\s[a-zšđžčć]{2,}){0,2}$/;
 
